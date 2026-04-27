@@ -1,32 +1,34 @@
-import { useState } from 'react'
-import './App.css'
+import { React } from "react";
+import "./App.css";
+import Header from "./components/header";
+import Footer from "./components/footer";
+import Card from "./components/habilidades";
+import Habilidades from "./components/habilidades";
+import Intereses from "./components/intereses";
+import Proyectos from "./components/proyectos";
 
 function App() {
-
   return (
-    <div>
-      <h1>Ramiro Cuellar</h1>
-      <h2>18 años - Puerto Varas</h2>
-      <p>River me está sacando canas, me gusta tomar mate y llorar por fútbol</p>
+    <>
+      <Header />
 
-      <p>...</p>
+      <br />
 
-      <section>
-        <h2>Cosas organizadas</h2>
-        <p>Me gustan las facturas</p>
-        <p>Soy Argentino</p>
-        <p>Quiero vivir en Suiza</p>
-        <ul>
-          <li>Facturas</li>
-          <li>Ñoquis</li>
-          <li>Mate</li>
-        </ul>
-      </section>
-    </div>
+      <Habilidades />
 
+      <br />
 
+      <Intereses />
 
-  )
+      <br />
+
+      <Proyectos />
+
+      <br />
+
+      <Footer />
+    </>
+  );
 }
 
-export default App
+export default App;
